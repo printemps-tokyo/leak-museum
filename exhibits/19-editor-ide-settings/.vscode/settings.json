@@ -1,0 +1,10 @@
+{
+  "_comment": "ANTIPATTERN: committed .vscode/settings.json with a live DB connection string and an auth header.",
+  "sqltools.connections": [
+    { "name": "prod", "driver": "PostgreSQL", "server": "prod-db.example.com",
+      "database": "main", "username": "root", "password": "S3cr3tR00t" }
+  ],
+  "rest-client.environmentVariables": {
+    "$shared": { "token": "Bearer admin-EXAMPLE-not-a-real-token" }
+  }
+}
